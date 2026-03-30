@@ -43,7 +43,7 @@ public class NotificationServiceTest {
         //given
         User owner = User.builder().id(1L).build();
         User other = User.builder().id(2L).build();
-        Notification notification = Notification.builder().id(1L).build();
+        Notification notification = Notification.builder().id(1L).user(owner).build();
         when(notificationRepository.findById(1L)).thenReturn(Optional.of(notification));
         //when + then
         assertThrows(AccessDeniedException.class, () -> notificationService.markAsRead(1L, other));
