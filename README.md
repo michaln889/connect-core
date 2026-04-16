@@ -13,7 +13,7 @@ Projekt skupia się na dobrych praktykach backendowych, architekturze aplikacji 
 - paginacja i sortowanie danych
 
 ## Technologie
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Data JPA + Hibernate
 - Spring Security
@@ -58,9 +58,9 @@ Projekt zawiera testy jednostkowe dla warstwy serwisowej:
 Uruchomienie:
 mvn test
 
-## Uruchomienie projektu
+## Uruchomienie lokalne (bez Dockera)
 #### 1. Wymagania
-- Java 17
+- Java 21
 - PostgreSQL
 #### 2. Konfiguracja bazy danych
 Aplikacja korzysta z PostgreSQL.
@@ -75,6 +75,11 @@ Można również użyć własnej konfiguracji bazy danych - migracje zostaną wy
 
 #### 3. Uruchomienie
 mvn spring-boot:run
+
+#### 4. Uruchomienie (Docker)
+```bash
+docker-compose up --build
+
 
 
 ## Status
