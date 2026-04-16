@@ -79,7 +79,7 @@ mvn spring-boot:run
 #### 4. Uruchomienie (Docker)
 ```bash
 docker-compose up --build
-```bash
+```
 
 
 
