@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/connectcore
-    username: connectcore_user
-    password: password
+    url: jdbc:postgresql://db:5432/connectcore
+    username: user
+    password: pass
     driver-class-name: org.postgresql.Driver
 
   jpa:
